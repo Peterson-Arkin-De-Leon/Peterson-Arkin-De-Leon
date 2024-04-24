@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+  body {
+    font-family: "Times New Roman", Times, serif;
+    background-image: url('background_image.jpg'); /* Replace 'background_image.jpg' with the path to your image */
+    background-size: cover;
+  }
+  .container {
+    width: 400px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  .login-heading {
+    font-weight: bold;
+    font-size: 36px; /* Increased font size */
+    color: magenta;
+    margin-bottom: 30px; /* Added space */
+  }
+  .form-box {
+    background-color: purple;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  .form-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .form-box input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  .form-box label {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+  }
+  .forgot-password {
+    margin-top: 20px;
+    font-size: 14px;
+    color: blue;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="login-heading">   Log In</div> <!-- Added spaces before Log In -->
+  <div class="form-box">
+    <form>
+      <input type="text" placeholder="Gmail">
+      <br>
+      <input type="password" placeholder="Password">
+      <br>
+      <div style="display: flex; align-items: center;">
+        <input type="checkbox" id="remember"> <label for="remember" style="margin-left: 5px;">Remember Password</label>
+      </div>
+      <br>
+      <input type="submit" value="Login" style="width: 100%; padding: 10px; background-color: magenta; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    </form>
+  </div>
+  <div class="forgot-password"><a href="#">Forgot Password?</a></div>
+</div>
+</body>
+</html>
